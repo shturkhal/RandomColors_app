@@ -58,11 +58,11 @@
 			children = (
 				7B83467B2AADD80E00472E17 /* AppDelegate.swift */,
 				7B83467D2AADD80E00472E17 /* SceneDelegate.swift */,
+				7B83468F2AADD94000472E17 /* ColorsTableVC.swift */,
 				7B8346812AADD80E00472E17 /* Main.storyboard */,
 				7B8346842AADD80F00472E17 /* Assets.xcassets */,
 				7B8346862AADD80F00472E17 /* LaunchScreen.storyboard */,
 				7B8346892AADD80F00472E17 /* Info.plist */,
-				7B83468F2AADD94000472E17 /* ColorsTableVC.swift */,
 			);
 			path = RandomColors;
 			sourceTree = "<group>";
