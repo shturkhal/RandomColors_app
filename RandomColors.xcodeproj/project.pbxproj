@@ -13,6 +13,7 @@
 		7B8346852AADD80F00472E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B8346842AADD80F00472E17 /* Assets.xcassets */; };
 		7B8346882AADD80F00472E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8346862AADD80F00472E17 /* LaunchScreen.storyboard */; };
 		7B8346902AADD94000472E17 /* ColorsTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B83468F2AADD94000472E17 /* ColorsTableVC.swift */; };
+		7B8346922AADDB2E00472E17 /* ColorsDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8346912AADDB2E00472E17 /* ColorsDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7B8346872AADD80F00472E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B8346892AADD80F00472E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B83468F2AADD94000472E17 /* ColorsTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsTableVC.swift; sourceTree = "<group>"; };
+		7B8346912AADDB2E00472E17 /* ColorsDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7B83467B2AADD80E00472E17 /* AppDelegate.swift */,
 				7B83467D2AADD80E00472E17 /* SceneDelegate.swift */,
 				7B83468F2AADD94000472E17 /* ColorsTableVC.swift */,
+				7B8346912AADDB2E00472E17 /* ColorsDetailVC.swift */,
 				7B8346812AADD80E00472E17 /* Main.storyboard */,
 				7B8346842AADD80F00472E17 /* Assets.xcassets */,
 				7B8346862AADD80F00472E17 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B8346902AADD94000472E17 /* ColorsTableVC.swift in Sources */,
+				7B8346922AADDB2E00472E17 /* ColorsDetailVC.swift in Sources */,
 				7B83467C2AADD80E00472E17 /* AppDelegate.swift in Sources */,
 				7B83467E2AADD80E00472E17 /* SceneDelegate.swift in Sources */,
 			);
