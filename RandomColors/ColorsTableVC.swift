@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ColorsTableVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ColorsTableVC: UIViewController {
   
     
 
@@ -17,14 +17,7 @@ class ColorsTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         // Do any additional setup after loading the view.
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
-    
+ 
     
     
     
@@ -35,3 +28,16 @@ class ColorsTableVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
 //    }
     
 }
+
+extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
+    
+}
+
