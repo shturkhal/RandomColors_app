@@ -15,22 +15,8 @@
                     <view key="view" contentMode="scaleToFill" id="ziZ-hc-0dA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujb-MB-Eio">
-                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="tempButtonTapped:" destination="Tpm-kt-9O1" eventType="touchUpInside" id="F1v-CX-Kjh"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wmi-X8-bav"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
-                        <constraints>
-                            <constraint firstItem="Ujb-MB-Eio" firstAttribute="centerY" secondItem="ziZ-hc-0dA" secondAttribute="centerY" id="034-uD-G9M"/>
-                            <constraint firstItem="Ujb-MB-Eio" firstAttribute="centerX" secondItem="ziZ-hc-0dA" secondAttribute="centerX" id="AgF-1B-NOc"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Colors" id="hbF-d8-jJ2"/>
                     <connections>
