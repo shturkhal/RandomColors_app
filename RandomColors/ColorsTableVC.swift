@@ -15,10 +15,16 @@ class ColorsTableVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func tempButtonTapped(_ sender: UIButton) {
-        // представити інший вʼю через ідентіфаер переходу
-        performSegue(withIdentifier: "ToColorsDetailVC", sender: nil)
-    }
+    
+    
+    
+    
+    
+    //MARK: example of perform segue
+//    @IBAction func tempButtonTapped(_ sender: UIButton) {
+//        // представити інший вʼю через ідентіфаер переходу
+//        performSegue(withIdentifier: "ToColorsDetailVC", sender: nil)
+//    }
     
     /*
     // MARK: - Navigation
