@@ -9,9 +9,13 @@ import UIKit
 
 class ColorsDetailVC: UIViewController {
 
+    
+    // waiting what color he needs to show
+    var color: UIColor?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = color ?? .magenta
         // Do any additional setup after loading the view.
     }
     
