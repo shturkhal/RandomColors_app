@@ -31,12 +31,17 @@ class ColorsTableVC: UIViewController {
 
 extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
     
+    // this is tells how many rows i need to show
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 50
+    }
+    // and this tells me what to show in this rows
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "ToColorsDetailVC", sender: nil)
     }
     
 }
