@@ -12,6 +12,14 @@ import UIKit
 class ColorsTableVC: UIViewController {
     // table views and collection views -  ALWAYS TAKE AN ARRAY!!!
     // create an empty array
+    
+    // create enums with static let for string elements
+    enum Cells {
+       static let colorCell = "ColorCell"
+    }
+    enum Segues {
+        static let toDetail = "ToColorsDetailVC"
+    }
     var colors: [UIColor] = []
     
     override func viewDidLoad() {
@@ -21,17 +29,12 @@ class ColorsTableVC: UIViewController {
     // create lop for append random color in empty array
     func addRandomColors() {
         for _ in 0..<50 {
-            colors.append(createRandomColor())
+            colors.append(.random())
         }
     }
-    // create func that creates new random color
-    func createRandomColor() -> UIColor {
-        let randomColor = UIColor(red: CGFloat.random(in: 0...1),
-                                  green: CGFloat.random(in: 0...1),
-                                  blue: CGFloat.random(in: 0...1),
-                                  alpha: 1)
-        return randomColor
-    }
+    
+    // create func that creates new random color - GO TO UIColor+Ext extension
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // create destination with casting
         let nextVC = segue.destination as! ColorsDetailVC
@@ -56,7 +59,7 @@ extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
     // and this tells me what to show in this rows
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // create cell with identifier, if its ? - with GUARD
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "ColorCell") else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: Cells.colorCell) else { return UITableViewCell() }
         // create color cells full with index path(who nows how many cell we need)
        /// let color = colors[indexPath.row]
         // now fill cell with background color
@@ -71,7 +74,7 @@ extension ColorsTableVC: UITableViewDelegate, UITableViewDataSource {
         // we send color to selected row
         let color = colors[indexPath.row]
         // in sender we select what we want to send at the next VC -  go up tp prepere for segue
-        performSegue(withIdentifier: "ToColorsDetailVC", sender: color)
+        performSegue(withIdentifier: Segues.toDetail, sender: color)
     }
     
 }
