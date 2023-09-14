@@ -25,6 +25,7 @@ class ColorsTableVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         addRandomColors()
+       
     }
     // create lop for append random color in empty array
     func addRandomColors() {
@@ -46,6 +47,8 @@ class ColorsTableVC: UIViewController {
     //        // представити інший вʼю через ідентіфаер переходу
     //        performSegue(withIdentifier: "ToColorsDetailVC", sender: nil)
     //    }
+    
+    
     
 }
 
